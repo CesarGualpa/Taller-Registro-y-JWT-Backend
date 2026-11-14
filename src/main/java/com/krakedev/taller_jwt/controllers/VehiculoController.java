@@ -46,6 +46,7 @@ public class VehiculoController {
 		}
 	}
 
+	@GetMapping
 	public ResponseEntity<?> listarVehiculos() {
 		List<Vehiculo> lista = vehiculoRepository.findAll();
 		for (Vehiculo v : lista) {
